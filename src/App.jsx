@@ -155,7 +155,7 @@ function App() {
             </p>
             <div className="hero-actions">
               <a className="button button-dark" href="#work">Explore my work <ArrowDown /></a>
-              <a className="text-link" href="mailto:ammarmahmoud96@outlook.com">ammarmahmoud96@outlook.com <ArrowUpRight /></a>
+              <a className="text-link" href="mailto:ammarlbanna@gmail.com">ammarlbanna@gmail.com <ArrowUpRight /></a>
             </div>
           </div>
           <div className="hero-visual" aria-hidden="true">
@@ -258,9 +258,9 @@ function App() {
             <p className="section-label">Have a project in mind?</p>
             <h2>Let&apos;s make<br />something <em>work.</em></h2>
           </div>
-          <a className="contact-email reveal" href="mailto:ammarmahmoud96@outlook.com">
+          <a className="contact-email reveal" href="mailto:ammarlbanna@gmail.com">
             <span>Start a conversation</span>
-            ammarmahmoud96<br />@outlook.com
+            ammarlbanna<br />@gmail.com
             <ArrowUpRight />
           </a>
           <div className="contact-details reveal">
@@ -268,7 +268,7 @@ function App() {
             <div>
               <a href="https://github.com/ammar-mahmoud-96" target="_blank" rel="noreferrer" aria-label="GitHub"><CodeXml /></a>
               <a href="https://www.linkedin.com/in/ammar-mahmoud-96" target="_blank" rel="noreferrer" aria-label="LinkedIn"><ContactRound /></a>
-              <a href="mailto:ammarmahmoud96@outlook.com" aria-label="Email"><Mail /></a>
+              <a href="mailto:ammarlbanna@gmail.com" aria-label="Email"><Mail /></a>
             </div>
           </div>
         </section>
