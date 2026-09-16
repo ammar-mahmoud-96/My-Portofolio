@@ -15,45 +15,56 @@ import './App.css'
 const projects = [
   {
     number: '01',
-    title: 'Shop.co',
+    title: 'Shop.co Web Platform',
     type: 'Ecommerce platform',
     description:
-      'A responsive storefront with product discovery, cart management, checkout flows, and a performance-first Next.js architecture.',
-    stack: ['Next.js', 'TypeScript', 'Redux Toolkit'],
+      'A responsive e-commerce platform with product catalog, cart management, checkout functionality, and strong SEO-focused performance on Next.js.',
+    stack: ['React.js', 'Next.js', 'TypeScript', 'Redux Toolkit', 'Firebase', 'Vercel'],
     live: 'https://ecommerce-xi-mocha.vercel.app/',
     github: 'https://github.com/ammar-mahmoud-96/Ecommerce',
     accent: 'coral',
   },
   {
     number: '02',
-    title: 'NutriMe',
-    type: 'Healthcare platform',
+    title: 'Shop.co Mobile Platform',
+    type: 'Mobile app',
     description:
-      'An SEO-optimized healthcare experience with responsive appointment workflows and a maintainable, performance-focused frontend.',
-    stack: ['Next.js', 'React', 'TypeScript'],
-    live: 'https://drmaielbanna.online/',
-    github: 'https://github.com/ammar-mahmoud-96/DrMaiElbanna',
+      'Built the mobile version of the Shop.co experience with a smooth storefront and app-like usability.',
+    stack: ['Flutter', 'Dart', 'Firebase', 'Firestore'],
+    // live: 'https://ecommerce-xi-mocha.vercel.app/',
+    github: 'https://github.com/ammar-mahmoud-96/Ecommerce-Mobile-App',
     accent: 'mint',
   },
   {
     number: '03',
-    title: 'Renaissance Egypt',
+    title: 'NutriMe Healthcare Platform',
+    type: 'Healthcare platform',
+    description:
+      'Built a SEO-optimized healthcare platform with responsive design, appointment workflows, and performance-focused architecture.',
+    stack: ['React.js', 'Next.js', 'TypeScript', 'Redux Toolkit', 'Vercel'],
+    live: 'https://drmaielbanna.online/',
+    github: 'https://github.com/ammar-mahmoud-96/DrMaiElbanna',
+    accent: 'blue',
+  },
+  {
+    number: '04',
+    title: 'Renaissance Egypt Corporate Website',
     type: 'Corporate website',
     description:
       'A modern corporate presence built with reusable components, cross-browser compatibility, and polished responsive layouts.',
     stack: ['JavaScript', 'Bootstrap', 'Hostinger'],
     live: 'https://renaissance-eg.com/',
-    accent: 'blue',
+    accent: 'yellow',
   },
   {
-    number: '04',
-    title: 'Smart Home',
-    type: 'IoT mobile application',
+    number: '05',
+    title: 'Smart Home Mobile Application',
+    type: 'IoT application',
     description:
       'A real-time monitoring and control application connecting Flutter, Firebase, and NodeMCU-powered IoT devices.',
     stack: ['Flutter', 'Firebase', 'IoT'],
     github: 'https://github.com/ammar-mahmoud-96/IOT-smart-home',
-    accent: 'yellow',
+    accent: 'mint',
   },
 ]
 
@@ -62,27 +73,33 @@ const experience = [
     period: 'Feb 2023 — Present',
     role: 'Frontend Developer',
     company: 'Freelance',
-    body: 'Delivering production React and Next.js applications across ecommerce, healthcare, and business domains, from reusable UI systems through API integration and deployment.',
+    body: 'Delivered multiple client-facing React.js and Next.js applications across e-commerce, healthcare, and business domains, implementing scalable architectures, reusable components, and production deployments through Vercel.',
   },
   {
     period: 'Jan 2024 — Apr 2025',
     role: 'Frontend Web Developer',
     company: 'Planning Solution',
-    body: 'Developed healthcare management modules with Next.js and TypeScript, improving load performance through lazy loading and component optimization.',
+    body: 'Developed healthcare management modules using Next.js and TypeScript, reducing page load times through lazy loading and component optimization. Collaborated with stakeholders to analyze requirements and implement modern UI solutions.',
   },
   {
     period: 'Nov 2022 — May 2025',
     role: 'Software Lab Engineer',
     company: 'British University in Egypt',
-    body: 'Maintained university web platforms, supported software engineering laboratories, and assisted with web development activities.',
+    body: 'Maintained university web platforms and supported software engineering laboratories while assisting with web development activities and educational support.',
   },
 ]
 
 const skills = [
-  ['Core', 'React.js', 'Next.js', 'TypeScript', 'JavaScript ES6+', 'HTML5', 'CSS3'],
-  ['Architecture', 'Redux Toolkit', 'Context API', 'SSR & SSG', 'REST APIs', 'Authentication'],
-  ['Performance', 'Code Splitting', 'Lazy Loading', 'SEO Optimization', 'Responsive Design', 'Accessibility'],
-  ['Tools & More', 'Git & GitHub', 'Vercel', 'Firebase', 'Flutter', 'WordPress', 'Linux'],
+  ['Frontend', 'React.js', 'Next.js', 'TypeScript', 'JavaScript ES6+', 'HTML5', 'CSS3', 'Bootstrap', 'Responsive Design'],
+  ['State Management', 'Redux Toolkit', 'Context API'],
+  ['API Integration', 'REST APIs', 'Authentication', 'Data Fetching', 'Firebase'],
+  ['Tools', 'Git', 'GitHub', 'Linux', 'Postman'],
+  ['Mobile & CMS', 'Flutter', 'Firebase', 'WordPress'],
+  ['Frontend Concepts', 'SSR', 'SSG', 'Reusable Components'],
+  ['React Ecosystem', 'React Hooks', 'Custom Hooks', 'React Router'],
+  ['Performance Optimization', 'Code Splitting', 'Lazy Loading', 'Performance Monitoring'],
+  ['Deployment & Hosting', 'Vercel', 'Hostinger'],
+  ['Software Skills', 'Data Structures & Algorithms', 'Design Patterns', 'Clean Code Principles'],
 ]
 
 function App() {
@@ -120,8 +137,9 @@ function App() {
           {menuOpen ? <X /> : <Menu />}
         </button>
         <nav className={menuOpen ? 'nav-links is-open' : 'nav-links'} aria-label="Main navigation">
-          <a href="#work" onClick={closeMenu}>Work</a>
+          <a href="#summary" onClick={closeMenu}>Summary</a>
           <a href="#experience" onClick={closeMenu}>Experience</a>
+          <a href="#projects" onClick={closeMenu}>Projects</a>
           <a href="#skills" onClick={closeMenu}>Skills</a>
           <a className="nav-contact" href="#contact" onClick={closeMenu}>Let&apos;s talk <ArrowUpRight /></a>
         </nav>
@@ -131,9 +149,9 @@ function App() {
         <section className="hero-section" aria-labelledby="hero-title">
           <div className="hero-copy">
             <p className="eyebrow"><span className="status-dot" /> Available for new opportunities</p>
-            <h1 id="hero-title">I build fast,<br />thoughtful <em>web</em><br />experiences.</h1>
+            <h1 id="hero-title">I build fast,<br />thoughtful <em>web & mobile</em><br />experiences.</h1>
             <p className="hero-intro">
-              I&apos;m <strong>Ammar ElBanna</strong>, a frontend developer in Cairo turning complex ideas into accessible, responsive products with React, Next.js, and TypeScript.
+              I&apos;m <strong>Ammar ElBanna</strong>, a frontend developer in Cairo turning complex ideas into accessible, responsive products with React, Next.js, TypeScript and Flutter.
             </p>
             <div className="hero-actions">
               <a className="button button-dark" href="#work">Explore my work <ArrowDown /></a>
