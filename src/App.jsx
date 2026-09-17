@@ -285,6 +285,7 @@ function App() {
         </section>
       </main>
 
+
       <footer>
         <a className="logo footer-logo" href="#top">AE<span>.</span></a>
         <p>Designed &amp; built with care. © {new Date().getFullYear()} Ammar ElBanna.</p>
