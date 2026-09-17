@@ -29,14 +29,25 @@ const projects = [
     title: 'Shop.co Mobile Platform',
     type: 'Mobile app',
     description:
-      'Built the mobile version of the Shop.co experience with a smooth storefront and app-like usability.',
+      'The mobile version of the Shop.co with a smooth storefront and app-like usability.',
     stack: ['Flutter', 'Dart', 'Firebase', 'Firestore'],
     // live: 'https://ecommerce-xi-mocha.vercel.app/',
     github: 'https://github.com/ammar-mahmoud-96/Ecommerce-Mobile-App',
     accent: 'mint',
   },
-  {
+   {
     number: '03',
+    title: 'Shop.co Admin Dashboard',
+    type: 'Mobile app',
+    description:
+      'The admin Dashboard for Shop.co platforms.',
+    stack: ['Reactjs', 'Typescript', 'Vite', 'Firestore'],
+    live: 'https://ecommerce-admin-dashboard-ivory.vercel.app/',
+    github: 'https://github.com/ammar-mahmoud-96/Ecommerce-Admin-Dashboard',
+    accent: 'yellow',
+  },
+  {
+    number: '04',
     title: 'NutriMe Healthcare Platform',
     type: 'Healthcare platform',
     description:
@@ -47,7 +58,7 @@ const projects = [
     accent: 'blue',
   },
   {
-    number: '04',
+    number: '05',
     title: 'Renaissance Egypt Corporate Website',
     type: 'Corporate website',
     description:
@@ -57,7 +68,7 @@ const projects = [
     accent: 'yellow',
   },
   {
-    number: '05',
+    number: '06',
     title: 'Smart Home Mobile Application',
     type: 'IoT application',
     description:
